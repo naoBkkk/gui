@@ -7,7 +7,7 @@
  Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
 ]=]
 
--- Instances: 25 | Scripts: 6 | Modules: 0 | Tags: 0
+-- Instances: 28 | Scripts: 7 | Modules: 0 | Tags: 0
 local G2L = {};
 
 -- StarterGui.ScreenGui
@@ -198,7 +198,7 @@ G2L["13"]["FontFace"] = Font.new([[rbxasset://fonts/families/HighwayGothic.json]
 G2L["13"]["Size"] = UDim2.new(0, 84, 0, 51);
 G2L["13"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["13"]["Text"] = [[c00lgui]];
-G2L["13"]["Position"] = UDim2.new(-0.00168, 0, 0.10232, 0);
+G2L["13"]["Position"] = UDim2.new(-0.00168, 0, 0.1003, 0);
 
 
 -- StarterGui.ScreenGui.DashboardFrame.ButtonFrame.ScrollingFrame.TextButton.UIGradient
@@ -212,35 +212,59 @@ G2L["15"] = Instance.new("LocalScript", G2L["13"]);
 
 
 
--- StarterGui.ScreenGui.DashboardFrame.Main
-G2L["16"] = Instance.new("Frame", G2L["c"]);
+-- StarterGui.ScreenGui.DashboardFrame.ButtonFrame.ScrollingFrame.TextButton
+G2L["16"] = Instance.new("TextButton", G2L["f"]);
 G2L["16"]["BorderSizePixel"] = 0;
+G2L["16"]["TextSize"] = 39;
+G2L["16"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["16"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["16"]["Size"] = UDim2.new(0, 463, 0, 301);
-G2L["16"]["Position"] = UDim2.new(0.18933, 0, 0.02208, 0);
+G2L["16"]["FontFace"] = Font.new([[rbxasset://fonts/families/HighwayGothic.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["16"]["Size"] = UDim2.new(0, 84, 0, 51);
 G2L["16"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["16"]["Name"] = [[Main]];
-G2L["16"]["BackgroundTransparency"] = 0.45;
+G2L["16"]["Text"] = [[IY]];
+G2L["16"]["Position"] = UDim2.new(-0.00168, 0, 0.20199, 0);
+
+
+-- StarterGui.ScreenGui.DashboardFrame.ButtonFrame.ScrollingFrame.TextButton.UIGradient
+G2L["17"] = Instance.new("UIGradient", G2L["16"]);
+G2L["17"]["Rotation"] = -92;
+G2L["17"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(0, 0, 0)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
+
+
+-- StarterGui.ScreenGui.DashboardFrame.ButtonFrame.ScrollingFrame.TextButton.LocalScript
+G2L["18"] = Instance.new("LocalScript", G2L["16"]);
+
+
+
+-- StarterGui.ScreenGui.DashboardFrame.Main
+G2L["19"] = Instance.new("Frame", G2L["c"]);
+G2L["19"]["BorderSizePixel"] = 0;
+G2L["19"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["19"]["Size"] = UDim2.new(0, 463, 0, 301);
+G2L["19"]["Position"] = UDim2.new(0.18933, 0, 0.02208, 0);
+G2L["19"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["19"]["Name"] = [[Main]];
+G2L["19"]["BackgroundTransparency"] = 0.45;
 
 
 -- StarterGui.ScreenGui.DashboardFrame.Main.ScrollingFrame
-G2L["17"] = Instance.new("ScrollingFrame", G2L["16"]);
-G2L["17"]["Active"] = true;
-G2L["17"]["BorderSizePixel"] = 0;
-G2L["17"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["17"]["Size"] = UDim2.new(0, 463, 0, 299);
-G2L["17"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["17"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["17"]["BackgroundTransparency"] = 1;
+G2L["1a"] = Instance.new("ScrollingFrame", G2L["19"]);
+G2L["1a"]["Active"] = true;
+G2L["1a"]["BorderSizePixel"] = 0;
+G2L["1a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1a"]["Size"] = UDim2.new(0, 463, 0, 299);
+G2L["1a"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1a"]["BackgroundTransparency"] = 1;
 
 
 -- StarterGui.ScreenGui.DashboardFrame.LocalScript
-G2L["18"] = Instance.new("LocalScript", G2L["c"]);
+G2L["1b"] = Instance.new("LocalScript", G2L["c"]);
 
 
 
 -- StarterGui.ScreenGui.DashboardFrame.LocalScript
-G2L["19"] = Instance.new("LocalScript", G2L["c"]);
+G2L["1c"] = Instance.new("LocalScript", G2L["c"]);
 
 
 
@@ -341,16 +365,27 @@ local script = G2L["15"];
 	
 end;
 task.spawn(C_15);
--- StarterGui.ScreenGui.DashboardFrame.LocalScript
+-- StarterGui.ScreenGui.DashboardFrame.ButtonFrame.ScrollingFrame.TextButton.LocalScript
 local function C_18()
 local script = G2L["18"];
-	script.Parent.Active = true
-	script.Parent.Draggable = true
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Yutreepode67/k00pgui/refs/heads/main/k00pgui%20v11%20(2).txt", true))()
+	end)
+	
 end;
 task.spawn(C_18);
 -- StarterGui.ScreenGui.DashboardFrame.LocalScript
-local function C_19()
-local script = G2L["19"];
+local function C_1b()
+local script = G2L["1b"];
+	script.Parent.Active = true
+	script.Parent.Draggable = true
+end;
+task.spawn(C_1b);
+-- StarterGui.ScreenGui.DashboardFrame.LocalScript
+local function C_1c()
+local script = G2L["1c"];
 	local gui = script.Parent
 	local dashboard = gui:WaitForChild("DashboardFrame")
 	local buttonFrame = gui:WaitForChild("ButtonFrame")
@@ -387,6 +422,6 @@ local script = G2L["19"];
 	showPage("Page1")
 	
 end;
-task.spawn(C_19);
+task.spawn(C_1c);
 
 return G2L["1"], require;
