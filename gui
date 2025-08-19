@@ -123,6 +123,7 @@ G2L["b"] = Instance.new("LocalScript", G2L["2"]);
 
 -- StarterGui.ScreenGui.DashboardFrame
 G2L["c"] = Instance.new("Frame", G2L["1"]);
+G2L["c"]["Visible"] = false;
 G2L["c"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["c"]["Size"] = UDim2.new(0, 581, 0, 317);
 G2L["c"]["Position"] = UDim2.new(0.53632, 0, 0.42417, 0);
@@ -371,7 +372,7 @@ local script = G2L["18"];
 	local button = script.Parent
 	
 	button.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet("https://pastebin.com/raw/ZD2zBzLB", true))()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/RetroGamesAlt/K00pgui-v9/refs/heads/main/SourceCode.lua", true))()
 	end)
 	
 end;
