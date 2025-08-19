@@ -371,7 +371,7 @@ local script = G2L["18"];
 	local button = script.Parent
 	
 	button.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/Yutreepode67/k00pgui/refs/heads/main/k00pgui%20v11%20(2).txt", true))()
+		loadstring(game:HttpGet("https://pastebin.com/raw/KPpNHSL8", true))()
 	end)
 	
 end;
