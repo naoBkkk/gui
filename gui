@@ -7,214 +7,807 @@
  Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
 ]=]
 
--- Instances: 12 | Scripts: 8 | Modules: 0 | Tags: 0
+-- Instances: 21 | Scripts: 10 | Modules: 0 | Tags: 0
 local G2L = {};
 
--- StarterGui.R.E.F
+-- StarterGui.ScreenGui
 G2L["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
-G2L["1"]["Name"] = [[R.E.F]];
-G2L["1"]["ResetOnSpawn"] = false;
+G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
 
 
--- StarterGui.R.E.F.Starter
-G2L["2"] = Instance.new("ImageButton", G2L["1"]);
-G2L["2"]["BorderSizePixel"] = 0;
-G2L["2"]["BackgroundTransparency"] = 1;
+-- StarterGui.ScreenGui.ImageLabel
+G2L["2"] = Instance.new("ImageLabel", G2L["1"]);
+G2L["2"]["Active"] = true;
 G2L["2"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2"]["ImageColor3"] = Color3.fromRGB(0, 209, 255);
-G2L["2"]["Image"] = [[rbxassetid://137310048801728]];
-G2L["2"]["Size"] = UDim2.new(0, 65, 0, 100);
+G2L["2"]["Image"] = [[rbxassetid://88243765612295]];
+G2L["2"]["Size"] = UDim2.new(0, 294, 0, 157);
 G2L["2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2"]["Name"] = [[Starter]];
-G2L["2"]["Position"] = UDim2.new(0.01523, 0, 0.85981, 0);
+G2L["2"]["Position"] = UDim2.new(0.75292, 0, 0.73127, 0);
 
 
--- StarterGui.R.E.F.Starter.LocalScript
-G2L["3"] = Instance.new("LocalScript", G2L["2"]);
+-- StarterGui.ScreenGui.ImageLabel.TextButton
+G2L["3"] = Instance.new("TextButton", G2L["2"]);
+G2L["3"]["TextStrokeTransparency"] = 0;
+G2L["3"]["BorderSizePixel"] = 0;
+G2L["3"]["TextStrokeColor3"] = Color3.fromRGB(217, 154, 154);
+G2L["3"]["TextSize"] = 27;
+G2L["3"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3"]["BackgroundColor3"] = Color3.fromRGB(153, 62, 62);
+G2L["3"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["3"]["BackgroundTransparency"] = 0.5;
+G2L["3"]["Size"] = UDim2.new(0, 131, 0, 26);
+G2L["3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3"]["Text"] = [[ESP]];
+G2L["3"]["Position"] = UDim2.new(0.03401, 0, 0.07643, 0);
 
 
-
--- StarterGui.R.E.F.Starter.LocalScript
-G2L["4"] = Instance.new("LocalScript", G2L["2"]);
-
-
-
--- StarterGui.R.E.F.Starter.LocalScript
-G2L["5"] = Instance.new("LocalScript", G2L["2"]);
-
-
-
--- StarterGui.R.E.F.Starter.LocalScript
-G2L["6"] = Instance.new("LocalScript", G2L["2"]);
-
-
-
--- StarterGui.R.E.F.Starter.LocalScript
-G2L["7"] = Instance.new("LocalScript", G2L["2"]);
+-- StarterGui.ScreenGui.ImageLabel.TextButton.LocalScript
+G2L["4"] = Instance.new("LocalScript", G2L["3"]);
 
 
 
--- StarterGui.R.E.F.Starter.LocalScript
-G2L["8"] = Instance.new("LocalScript", G2L["2"]);
+-- StarterGui.ScreenGui.ImageLabel.TextButton
+G2L["5"] = Instance.new("TextButton", G2L["2"]);
+G2L["5"]["TextStrokeTransparency"] = 0;
+G2L["5"]["BorderSizePixel"] = 0;
+G2L["5"]["TextStrokeColor3"] = Color3.fromRGB(217, 154, 154);
+G2L["5"]["TextSize"] = 27;
+G2L["5"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["5"]["BackgroundColor3"] = Color3.fromRGB(153, 62, 62);
+G2L["5"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["5"]["BackgroundTransparency"] = 0.5;
+G2L["5"]["Size"] = UDim2.new(0, 131, 0, 26);
+G2L["5"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["5"]["Text"] = [[TRACERS]];
+G2L["5"]["Position"] = UDim2.new(0.51666, 0, 0.07643, 0);
+
+
+-- StarterGui.ScreenGui.ImageLabel.TextButton.LocalScript
+G2L["6"] = Instance.new("LocalScript", G2L["5"]);
 
 
 
--- StarterGui.R.E.F.Starter.LocalScript
-G2L["9"] = Instance.new("LocalScript", G2L["2"]);
+-- StarterGui.ScreenGui.ImageLabel.TextButton
+G2L["7"] = Instance.new("TextButton", G2L["2"]);
+G2L["7"]["TextStrokeTransparency"] = 0;
+G2L["7"]["BorderSizePixel"] = 0;
+G2L["7"]["TextStrokeColor3"] = Color3.fromRGB(217, 154, 154);
+G2L["7"]["TextSize"] = 27;
+G2L["7"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["7"]["BackgroundColor3"] = Color3.fromRGB(153, 62, 62);
+G2L["7"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["7"]["BackgroundTransparency"] = 0.5;
+G2L["7"]["Size"] = UDim2.new(0, 131, 0, 26);
+G2L["7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["7"]["Text"] = [[AIMBOT [X]]];
+G2L["7"]["Position"] = UDim2.new(0.03401, 0, 0.3078, 0);
+
+
+-- StarterGui.ScreenGui.ImageLabel.TextButton.LocalScript
+G2L["8"] = Instance.new("LocalScript", G2L["7"]);
 
 
 
--- StarterGui.R.E.F.Starter.LocalScript
-G2L["a"] = Instance.new("LocalScript", G2L["2"]);
+-- StarterGui.ScreenGui.ImageLabel.TextButton
+G2L["9"] = Instance.new("TextButton", G2L["2"]);
+G2L["9"]["TextStrokeTransparency"] = 0;
+G2L["9"]["BorderSizePixel"] = 0;
+G2L["9"]["TextStrokeColor3"] = Color3.fromRGB(217, 154, 154);
+G2L["9"]["TextSize"] = 27;
+G2L["9"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["9"]["BackgroundColor3"] = Color3.fromRGB(153, 62, 62);
+G2L["9"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["9"]["BackgroundTransparency"] = 0.5;
+G2L["9"]["Size"] = UDim2.new(0, 131, 0, 26);
+G2L["9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["9"]["Text"] = [[FOV]];
+G2L["9"]["Position"] = UDim2.new(0.51666, 0, 0.3078, 0);
+
+
+-- StarterGui.ScreenGui.ImageLabel.TextButton.LocalScript
+G2L["a"] = Instance.new("LocalScript", G2L["9"]);
 
 
 
--- StarterGui.R.E.F.Starter.TextLabel
-G2L["b"] = Instance.new("TextLabel", G2L["2"]);
+-- StarterGui.ScreenGui.ImageLabel.TextButton
+G2L["b"] = Instance.new("TextButton", G2L["2"]);
 G2L["b"]["TextStrokeTransparency"] = 0;
 G2L["b"]["BorderSizePixel"] = 0;
-G2L["b"]["TextSize"] = 14;
-G2L["b"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["b"]["FontFace"] = Font.new([[rbxasset://fonts/families/JosefinSans.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["b"]["BackgroundTransparency"] = 1;
-G2L["b"]["Size"] = UDim2.new(0, 229, 0, 72);
+G2L["b"]["TextStrokeColor3"] = Color3.fromRGB(217, 154, 154);
+G2L["b"]["TextSize"] = 27;
+G2L["b"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["b"]["BackgroundColor3"] = Color3.fromRGB(153, 62, 62);
+G2L["b"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["b"]["BackgroundTransparency"] = 0.5;
+G2L["b"]["Size"] = UDim2.new(0, 131, 0, 26);
 G2L["b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["b"]["Text"] = [[FULLY SERVER SIDED REMOTE EVENTS FIRING
-MADE BY V1RNU
-
-   GET STARTED
-<----------------------]];
-G2L["b"]["Position"] = UDim2.new(1, 0, 0.14, 0);
+G2L["b"]["Text"] = [[CROSSHAIR]];
+G2L["b"]["Position"] = UDim2.new(0.03401, 0, 0.53917, 0);
 
 
--- StarterGui.R.E.F.Starter.TextLabel.UIGradient
-G2L["c"] = Instance.new("UIGradient", G2L["b"]);
-G2L["c"]["Rotation"] = 81;
-G2L["c"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(2, 84, 12)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(57, 253, 255))};
+-- StarterGui.ScreenGui.ImageLabel.TextButton.LocalScript
+G2L["c"] = Instance.new("LocalScript", G2L["b"]);
 
 
--- StarterGui.R.E.F.Starter.LocalScript
-local function C_3()
-local script = G2L["3"];
-	
-	script.Parent.MouseButton1Click:Connect(function()
-		local ReplicatedStorage = game:GetService("ReplicatedStorage")
-	
-		for _, obj in ipairs(ReplicatedStorage:GetDescendants()) do
-			if obj:IsA("RemoteEvent") then
-				obj:FireServer()
-			end
-		end
-	
-	end)
-end;
-task.spawn(C_3);
--- StarterGui.R.E.F.Starter.LocalScript
+
+-- StarterGui.ScreenGui.ImageLabel.TextButton
+G2L["d"] = Instance.new("TextButton", G2L["2"]);
+G2L["d"]["TextStrokeTransparency"] = 0;
+G2L["d"]["BorderSizePixel"] = 0;
+G2L["d"]["TextStrokeColor3"] = Color3.fromRGB(217, 154, 154);
+G2L["d"]["TextSize"] = 27;
+G2L["d"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["d"]["BackgroundColor3"] = Color3.fromRGB(153, 62, 62);
+G2L["d"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["d"]["BackgroundTransparency"] = 0.5;
+G2L["d"]["Size"] = UDim2.new(0, 131, 0, 26);
+G2L["d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["d"]["Text"] = [[SPEED]];
+G2L["d"]["Position"] = UDim2.new(0.51666, 0, 0.53917, 0);
+
+
+-- StarterGui.ScreenGui.ImageLabel.TextButton.LocalScript
+G2L["e"] = Instance.new("LocalScript", G2L["d"]);
+
+
+
+-- StarterGui.ScreenGui.ImageLabel.LocalScript
+G2L["f"] = Instance.new("LocalScript", G2L["2"]);
+
+
+
+-- StarterGui.ScreenGui.ImageLabel.TextButton
+G2L["10"] = Instance.new("TextButton", G2L["2"]);
+G2L["10"]["TextStrokeTransparency"] = 0;
+G2L["10"]["BorderSizePixel"] = 0;
+G2L["10"]["TextStrokeColor3"] = Color3.fromRGB(217, 154, 154);
+G2L["10"]["TextSize"] = 27;
+G2L["10"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["10"]["BackgroundColor3"] = Color3.fromRGB(153, 62, 62);
+G2L["10"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["10"]["BackgroundTransparency"] = 0.5;
+G2L["10"]["Size"] = UDim2.new(0, 131, 0, 26);
+G2L["10"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["10"]["Text"] = [[HITBOX]];
+G2L["10"]["Position"] = UDim2.new(0.51666, 0, 0.76365, 0);
+
+
+-- StarterGui.ScreenGui.ImageLabel.TextButton.LocalScript
+G2L["11"] = Instance.new("LocalScript", G2L["10"]);
+
+
+
+-- StarterGui.ScreenGui.ImageLabel.TextButton
+G2L["12"] = Instance.new("TextButton", G2L["2"]);
+G2L["12"]["TextStrokeTransparency"] = 0;
+G2L["12"]["BorderSizePixel"] = 0;
+G2L["12"]["TextStrokeColor3"] = Color3.fromRGB(217, 154, 154);
+G2L["12"]["TextSize"] = 27;
+G2L["12"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["12"]["BackgroundColor3"] = Color3.fromRGB(153, 62, 62);
+G2L["12"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["12"]["BackgroundTransparency"] = 0.5;
+G2L["12"]["Size"] = UDim2.new(0, 131, 0, 26);
+G2L["12"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["12"]["Text"] = [[Tri Poloski]];
+G2L["12"]["Position"] = UDim2.new(0.03401, 0, 0.76365, 0);
+
+
+-- StarterGui.ScreenGui.ImageLabel.TextButton.LocalScript
+G2L["13"] = Instance.new("LocalScript", G2L["12"]);
+
+
+
+-- StarterGui.ScreenGui.ImageLabel
+G2L["14"] = Instance.new("ImageLabel", G2L["1"]);
+G2L["14"]["BorderSizePixel"] = 0;
+G2L["14"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["14"]["Image"] = [[rbxassetid://100480755871778]];
+G2L["14"]["Size"] = UDim2.new(0, 259, 0, 267);
+G2L["14"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["14"]["BackgroundTransparency"] = 1;
+G2L["14"]["Position"] = UDim2.new(0.42041, 0, 0.34126, 0);
+
+
+-- StarterGui.ScreenGui.ImageLabel.LocalScript
+G2L["15"] = Instance.new("LocalScript", G2L["14"]);
+
+
+
+-- StarterGui.ScreenGui.ImageLabel.TextButton.LocalScript
 local function C_4()
 local script = G2L["4"];
-	
 	script.Parent.MouseButton1Click:Connect(function()
-	local ReplicatedStorage = game:GetService("Workspace")
 	
-	for _, obj in ipairs(ReplicatedStorage:GetDescendants()) do
-		if obj:IsA("RemoteEvent") then
-			obj:FireServer()
+		local Players = game:GetService("Players")
+		local RunService = game:GetService("RunService")
+		local LocalPlayer = Players.LocalPlayer
+		local Camera = workspace.CurrentCamera
+	
+		-- REMOVE OLD ESP
+		if LocalPlayer.PlayerGui:FindFirstChild("L4V_BOX_ESP") then
+			LocalPlayer.PlayerGui.L4V_BOX_ESP:Destroy()
 		end
-	end
+	
+		-- GUI
+		local gui = Instance.new("ScreenGui")
+		gui.Name = "L4V_BOX_ESP"
+		gui.ResetOnSpawn = false
+		gui.Parent = LocalPlayer.PlayerGui
+	
+		local espBoxes = {}
+	
+		-- CREATE BOX
+		local function createESP(player)
+	
+			if player == LocalPlayer then
+				return
+			end
+	
+			local box = Instance.new("Frame")
+			box.BackgroundTransparency = 1
+			box.BorderSizePixel = 2
+			box.Visible = false
+			box.Parent = gui
+	
+			local stroke = Instance.new("UIStroke")
+			stroke.Thickness = 2
+			stroke.Parent = box
+	
+			local name = Instance.new("TextLabel")
+			name.BackgroundTransparency = 1
+			name.Size = UDim2.new(1,0,0,20)
+			name.Position = UDim2.new(0,0,0,-20)
+			name.Text = player.Name
+			name.TextScaled = true
+			name.Font = Enum.Font.GothamBold
+			name.TextStrokeTransparency = 0
+			name.Parent = box
+	
+			espBoxes[player] = {
+				Box = box,
+				Stroke = stroke,
+				Name = name
+			}
+		end
+	
+		-- PLAYERS
+		for _,plr in pairs(Players:GetPlayers()) do
+			createESP(plr)
+		end
+	
+		Players.PlayerAdded:Connect(createESP)
+	
+		Players.PlayerRemoving:Connect(function(plr)
+			if espBoxes[plr] then
+				espBoxes[plr].Box:Destroy()
+				espBoxes[plr] = nil
+			end
+		end)
+	
+		-- RGB EFFECT
+		local hue = 0
+	
+		RunService.RenderStepped:Connect(function()
+	
+			hue += 0.002
+			if hue > 1 then
+				hue = 0
+			end
+	
+			local rgb = Color3.fromHSV(hue,1,1)
+	
+			for player,esp in pairs(espBoxes) do
+	
+				local char = player.Character
+	
+				if char and char:FindFirstChild("HumanoidRootPart") and char:FindFirstChild("Humanoid") then
+	
+					local hrp = char.HumanoidRootPart
+					local humanoid = char.Humanoid
+	
+					if humanoid.Health > 0 then
+	
+						local pos, visible = Camera:WorldToViewportPoint(hrp.Position)
+	
+						if visible then
+	
+							local scale = 1 / (hrp.Position - Camera.CFrame.Position).Magnitude * 100
+							local width = math.clamp(35 * scale, 20, 300)
+							local height = math.clamp(60 * scale, 35, 500)
+	
+							esp.Box.Size = UDim2.new(0,width,0,height)
+							esp.Box.Position = UDim2.new(0,pos.X - width/2,0,pos.Y - height/2)
+	
+							esp.Box.Visible = true
+	
+							esp.Stroke.Color = rgb
+							esp.Name.TextColor3 = rgb
+	
+						else
+							esp.Box.Visible = false
+						end
+	
+					else
+						esp.Box.Visible = false
+					end
+	
+				else
+					esp.Box.Visible = false
+				end
+			end
+		end)
+	
 	end)
 end;
 task.spawn(C_4);
--- StarterGui.R.E.F.Starter.LocalScript
-local function C_5()
-local script = G2L["5"];
-	
-	script.Parent.MouseButton1Click:Connect(function()
-	local ReplicatedStorage = game:GetService("Players")
-	
-	for _, obj in ipairs(ReplicatedStorage:GetDescendants()) do
-		if obj:IsA("RemoteEvent") then
-			obj:FireServer()
-		end
-	end
-	end)
-end;
-task.spawn(C_5);
--- StarterGui.R.E.F.Starter.LocalScript
+-- StarterGui.ScreenGui.ImageLabel.TextButton.LocalScript
 local function C_6()
 local script = G2L["6"];
-	
 	script.Parent.MouseButton1Click:Connect(function()
-	local ReplicatedStorage = game:GetService("StarterPlayer")
 	
-	for _, obj in ipairs(ReplicatedStorage:GetDescendants()) do
-		if obj:IsA("RemoteEvent") then
-			obj:FireServer()
+		local Players = game:GetService("Players")
+		local RunService = game:GetService("RunService")
+		local LocalPlayer = Players.LocalPlayer
+		local Camera = workspace.CurrentCamera
+	
+		-- REMOVE OLD TRACERS
+		if LocalPlayer.PlayerGui:FindFirstChild("L4V_TRACERS") then
+			LocalPlayer.PlayerGui.L4V_TRACERS:Destroy()
 		end
-	end
+	
+		-- GUI
+		local gui = Instance.new("ScreenGui")
+		gui.Name = "L4V_TRACERS"
+		gui.ResetOnSpawn = false
+		gui.Parent = LocalPlayer.PlayerGui
+	
+		local tracers = {}
+	
+		-- CREATE TRACER
+		local function createTracer(player)
+	
+			if player == LocalPlayer then
+				return
+			end
+	
+			local line = Instance.new("Frame")
+			line.AnchorPoint = Vector2.new(0.5,0.5)
+			line.BorderSizePixel = 0
+			line.Parent = gui
+	
+			local corner = Instance.new("UICorner")
+			corner.CornerRadius = UDim.new(1,0)
+			corner.Parent = line
+	
+			tracers[player] = line
+		end
+	
+		-- PLAYERS
+		for _,plr in pairs(Players:GetPlayers()) do
+			createTracer(plr)
+		end
+	
+		Players.PlayerAdded:Connect(createTracer)
+	
+		Players.PlayerRemoving:Connect(function(plr)
+			if tracers[plr] then
+				tracers[plr]:Destroy()
+				tracers[plr] = nil
+			end
+		end)
+	
+		-- RGB
+		local hue = 0
+	
+		RunService.RenderStepped:Connect(function()
+	
+			hue += 0.003
+			if hue > 1 then
+				hue = 0
+			end
+	
+			local rgb = Color3.fromHSV(hue,1,1)
+	
+			for player,line in pairs(tracers) do
+	
+				local char = player.Character
+	
+				if char and char:FindFirstChild("HumanoidRootPart") and char:FindFirstChild("Humanoid") then
+	
+					local hrp = char.HumanoidRootPart
+					local humanoid = char.Humanoid
+	
+					if humanoid.Health > 0 then
+	
+						local pos, visible = Camera:WorldToViewportPoint(hrp.Position)
+	
+						if visible then
+	
+							local screenCenter = Vector2.new(Camera.ViewportSize.X / 2, Camera.ViewportSize.Y)
+	
+							local targetPos = Vector2.new(pos.X, pos.Y)
+	
+							local distance = (targetPos - screenCenter).Magnitude
+							local angle = math.atan2(
+								targetPos.Y - screenCenter.Y,
+								targetPos.X - screenCenter.X
+							)
+	
+							line.Size = UDim2.new(0,distance,0,3)
+							line.Position = UDim2.new(
+								0,
+								(screenCenter.X + targetPos.X) / 2,
+								0,
+								(screenCenter.Y + targetPos.Y) / 2
+							)
+	
+							line.Rotation = math.deg(angle)
+							line.BackgroundColor3 = rgb
+							line.Visible = true
+	
+						else
+							line.Visible = false
+						end
+	
+					else
+						line.Visible = false
+					end
+	
+				else
+					line.Visible = false
+				end
+			end
+		end)
+	
 	end)
 end;
 task.spawn(C_6);
--- StarterGui.R.E.F.Starter.LocalScript
-local function C_7()
-local script = G2L["7"];
-	
-	script.Parent.MouseButton1Click:Connect(function()
-	local ReplicatedStorage = game:GetService("ServerScriptService")
-	
-	for _, obj in ipairs(ReplicatedStorage:GetDescendants()) do
-		if obj:IsA("RemoteEvent") then
-			obj:FireServer()
-		end
-	end
-	end)
-end;
-task.spawn(C_7);
--- StarterGui.R.E.F.Starter.LocalScript
+-- StarterGui.ScreenGui.ImageLabel.TextButton.LocalScript
 local function C_8()
 local script = G2L["8"];
-	
 	script.Parent.MouseButton1Click:Connect(function()
-	local ReplicatedStorage = game:GetService("ServerStorage")
 	
-	for _, obj in ipairs(ReplicatedStorage:GetDescendants()) do
-		if obj:IsA("RemoteEvent") then
-			obj:FireServer()
+		local Players = game:GetService("Players")
+		local RunService = game:GetService("RunService")
+		local UserInputService = game:GetService("UserInputService")
+		local Camera = workspace.CurrentCamera
+	
+		local LocalPlayer = Players.LocalPlayer
+	
+		-- HOLD TO AIM
+		local Holding = false
+	
+		-- GET PLAYER CLOSEST TO CROSSHAIR
+		local function GetPlayerInCrosshair()
+	
+			local Closest = nil
+			local ClosestDistance = 80 -- FOV SIZE
+	
+			local MousePos = UserInputService:GetMouseLocation()
+	
+			for _,Player in pairs(Players:GetPlayers()) do
+	
+				if Player ~= LocalPlayer
+					and Player.Character
+					and Player.Character:FindFirstChild("Head")
+					and Player.Character:FindFirstChild("Humanoid")
+					and Player.Character.Humanoid.Health > 0 then
+	
+					local Position, Visible = Camera:WorldToViewportPoint(
+						Player.Character.Head.Position
+					)
+	
+					if Visible then
+	
+						local Distance = (
+							Vector2.new(Position.X, Position.Y)
+							- MousePos
+						).Magnitude
+	
+						if Distance < ClosestDistance then
+							ClosestDistance = Distance
+							Closest = Player
+						end
+					end
+				end
+			end
+	
+			return Closest
 		end
-	end
+	
+		-- HOLD X
+		UserInputService.InputBegan:Connect(function(input, gp)
+	
+			if gp then return end
+	
+			if input.KeyCode == Enum.KeyCode.LeftAlt then
+				Holding = true
+			end
+		end)
+	
+		UserInputService.InputEnded:Connect(function(input)
+	
+			if input.KeyCode == Enum.KeyCode.LeftAlt then
+				Holding = false
+			end
+		end)
+	
+		-- AIM LOOP
+		RunService.RenderStepped:Connect(function()
+	
+			if Holding then
+	
+				local Target = GetPlayerInCrosshair()
+	
+				if Target
+					and Target.Character
+					and Target.Character:FindFirstChild("Head") then
+	
+					Camera.CFrame = CFrame.new(
+						Camera.CFrame.Position,
+						Target.Character.Head.Position
+					)
+				end
+			end
+		end)
+	
 	end)
 end;
 task.spawn(C_8);
--- StarterGui.R.E.F.Starter.LocalScript
-local function C_9()
-local script = G2L["9"];
-	
-	script.Parent.MouseButton1Click:Connect(function()
-	local ReplicatedStorage = game:GetService("StarterGui")
-	
-	for _, obj in ipairs(ReplicatedStorage:GetDescendants()) do
-		if obj:IsA("RemoteEvent") then
-			obj:FireServer()
-		end
-	end
-	end)
-end;
-task.spawn(C_9);
--- StarterGui.R.E.F.Starter.LocalScript
+-- StarterGui.ScreenGui.ImageLabel.TextButton.LocalScript
 local function C_a()
 local script = G2L["a"];
-	
 	script.Parent.MouseButton1Click:Connect(function()
-	local ReplicatedStorage = game:GetService("StarterPack")
-	
-	for _, obj in ipairs(ReplicatedStorage:GetDescendants()) do
-		if obj:IsA("RemoteEvent") then
-			obj:FireServer()
-		end
-	end
+		game.Workspace.CurrentCamera.FieldOfView = 120
 	end)
 end;
 task.spawn(C_a);
+-- StarterGui.ScreenGui.ImageLabel.TextButton.LocalScript
+local function C_c()
+local script = G2L["c"];
+	script.Parent.MouseButton1Click:Connect(function()
+	
+		local player = game.Players.LocalPlayer
+		local mouse = player:GetMouse()
+		local RunService = game:GetService("RunService")
+	
+		-- REMOVE OLD CROSSHAIR
+		if player.PlayerGui:FindFirstChild("L4VCrosshair") then
+			player.PlayerGui.L4VCrosshair:Destroy()
+		end
+	
+		-- HIDE ROBLOX CURSOR
+		mouse.Icon = ""
+	
+		-- GUI
+		local gui = Instance.new("ScreenGui")
+		gui.Name = "L4VCrosshair"
+		gui.ResetOnSpawn = false
+		gui.Parent = player.PlayerGui
+	
+		-- MAIN FRAME
+		local crosshair = Instance.new("Frame")
+		crosshair.Size = UDim2.new(0,50,0,50)
+		crosshair.BackgroundTransparency = 1
+		crosshair.AnchorPoint = Vector2.new(0.5,0.5)
+		crosshair.Parent = gui
+	
+		-- CENTER DOT
+		local dot = Instance.new("Frame")
+		dot.Size = UDim2.new(0,6,0,6)
+		dot.Position = UDim2.new(0.5,-3,0.5,-3)
+		dot.BorderSizePixel = 0
+		dot.Parent = crosshair
+	
+		local dotCorner = Instance.new("UICorner")
+		dotCorner.CornerRadius = UDim.new(1,0)
+		dotCorner.Parent = dot
+	
+		-- CREATE LINES
+		local function createLine(pos,size)
+			local line = Instance.new("Frame")
+			line.Position = pos
+			line.Size = size
+			line.BorderSizePixel = 0
+			line.Parent = crosshair
+	
+			local corner = Instance.new("UICorner")
+			corner.CornerRadius = UDim.new(1,0)
+			corner.Parent = line
+	
+			return line
+		end
+	
+		local top = createLine(UDim2.new(0.5,-1,0.5,-18),UDim2.new(0,2,0,12))
+		local bottom = createLine(UDim2.new(0.5,-1,0.5,6),UDim2.new(0,2,0,12))
+		local left = createLine(UDim2.new(0.5,-18,0.5,-1),UDim2.new(0,12,0,2))
+		local right = createLine(UDim2.new(0.5,6,0.5,-1),UDim2.new(0,12,0,2))
+	
+		-- RGB + SPIN EFFECT
+		local hue = 0
+	
+		RunService.RenderStepped:Connect(function()
+	
+			crosshair.Position = UDim2.new(0,mouse.X,0,mouse.Y)
+	
+			hue += 0.003
+			if hue > 1 then
+				hue = 0
+			end
+	
+			local rgb = Color3.fromHSV(hue,1,1)
+	
+			dot.BackgroundColor3 = rgb
+			top.BackgroundColor3 = rgb
+			bottom.BackgroundColor3 = rgb
+			left.BackgroundColor3 = rgb
+			right.BackgroundColor3 = rgb
+	
+			crosshair.Rotation += 0.5
+		end)
+	
+	end)
+end;
+task.spawn(C_c);
+-- StarterGui.ScreenGui.ImageLabel.TextButton.LocalScript
+local function C_e()
+local script = G2L["e"];
+	script.Parent.MouseButton1Click:Connect(function()
+		while true do
+			game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 40
+			wait()
+		end
+	end)
+end;
+task.spawn(C_e);
+-- StarterGui.ScreenGui.ImageLabel.LocalScript
+local function C_f()
+local script = G2L["f"];
+	script.Parent.Draggable = true
+end;
+task.spawn(C_f);
+-- StarterGui.ScreenGui.ImageLabel.TextButton.LocalScript
+local function C_11()
+local script = G2L["11"];
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.PlayerAdded:Connect(function(player)
+	
+			player.CharacterAdded:Connect(function(character)
+	
+				local head = character:WaitForChild("Head")
+	
+				head.Size = Vector3.new(4,4,4)
+				head.CanCollide = false
+				head.Massless = true
+	
+			end)
+		end)
+	end)
+end;
+task.spawn(C_11);
+-- StarterGui.ScreenGui.ImageLabel.TextButton.LocalScript
+local function C_13()
+local script = G2L["13"];
+	script.Parent.MouseButton1Click:Connect(function()
+		-- RGB Skeleton ESP
+		-- Roblox Lua
+	
+		local Players = game:GetService("Players")
+		local RunService = game:GetService("RunService")
+	
+		local LocalPlayer = Players.LocalPlayer
+	
+		local skeletons = {}
+	
+		local function createLine()
+			local line = Drawing.new("Line")
+			line.Visible = false
+			line.Thickness = 2
+			return line
+		end
+	
+		local skeletonParts = {
+			{"Head", "UpperTorso"},
+			{"UpperTorso", "LowerTorso"},
+	
+			{"UpperTorso", "LeftUpperArm"},
+			{"LeftUpperArm", "LeftLowerArm"},
+			{"LeftLowerArm", "LeftHand"},
+	
+			{"UpperTorso", "RightUpperArm"},
+			{"RightUpperArm", "RightLowerArm"},
+			{"RightLowerArm", "RightHand"},
+	
+			{"LowerTorso", "LeftUpperLeg"},
+			{"LeftUpperLeg", "LeftLowerLeg"},
+			{"LeftLowerLeg", "LeftFoot"},
+	
+			{"LowerTorso", "RightUpperLeg"},
+			{"RightUpperLeg", "RightLowerLeg"},
+			{"RightLowerLeg", "RightFoot"},
+		}
+	
+		local function setupPlayer(player)
+			if player == LocalPlayer then return end
+	
+			skeletons[player] = {}
+	
+			for i = 1, #skeletonParts do
+				skeletons[player][i] = createLine()
+			end
+		end
+	
+		local function removePlayer(player)
+			if skeletons[player] then
+				for _, line in pairs(skeletons[player]) do
+					line:Remove()
+				end
+				skeletons[player] = nil
+			end
+		end
+	
+		for _, player in pairs(Players:GetPlayers()) do
+			setupPlayer(player)
+		end
+	
+		Players.PlayerAdded:Connect(setupPlayer)
+		Players.PlayerRemoving:Connect(removePlayer)
+	
+		RunService.RenderStepped:Connect(function()
+			local time = tick()
+	
+			local rgb = Color3.fromHSV((time % 5) / 5, 1, 1)
+	
+			for player, lines in pairs(skeletons) do
+				local char = player.Character
+	
+				if char and char:FindFirstChild("Humanoid") and char.Humanoid.Health > 0 then
+					for i, pair in pairs(skeletonParts) do
+						local part1 = char:FindFirstChild(pair[1])
+						local part2 = char:FindFirstChild(pair[2])
+	
+						local line = lines[i]
+	
+						if part1 and part2 then
+							local pos1, onScreen1 = workspace.CurrentCamera:WorldToViewportPoint(part1.Position)
+							local pos2, onScreen2 = workspace.CurrentCamera:WorldToViewportPoint(part2.Position)
+	
+							if onScreen1 and onScreen2 then
+								line.From = Vector2.new(pos1.X, pos1.Y)
+								line.To = Vector2.new(pos2.X, pos2.Y)
+	
+								line.Color = rgb
+								line.Visible = true
+							else
+								line.Visible = false
+							end
+						else
+							line.Visible = false
+						end
+					end
+				else
+					for _, line in pairs(lines) do
+						line.Visible = false
+					end
+				end
+			end
+		end)
+	end)
+end;
+task.spawn(C_13);
+-- StarterGui.ScreenGui.ImageLabel.LocalScript
+local function C_15()
+local script = G2L["15"];
+	local imageLabel = script.Parent
+	
+	for i = 0,1,0.01 do
+		imageLabel.ImageTransparency = i
+		task.wait(0.01)
+	end
+	
+	imageLabel:Destroy()
+end;
+task.spawn(C_15);
 
 return G2L["1"], require;
